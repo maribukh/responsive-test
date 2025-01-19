@@ -1,0 +1,296 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url(./color.css);
+@import url(././images.css);
+@import url(./media.css);
+
+body {
+  background-color: #0f1923;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: #dee3e7;
+}
+
+li:hover {
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #dee3e7;
+}
+
+p {
+  color: #dee3e7;
+  margin: 0.625rem 0rem;
+  font-weight: 100;
+}
+
+.button-container {
+  width: 20%;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 0.7rem 0rem;
+  background-color: #b8103d;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #fc2c63;
+
+}
+
+.container {
+  margin: auto;
+}
+
+.main {
+  width: 92%;
+  margin: auto;
+}
+
+.main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .header .logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.main .header .right-side {
+  width: 30%;
+}
+  .main .header .right-side span {
+display: none;
+  }
+.main .about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .main .about .left-side {
+  width: 30%;
+  margin-top: 6.25rem;
+}
+
+/* styles for all ABOUT */
+
+.container .main .cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.875rem;
+
+}
+
+.container .main .cards-container .card {
+  width: 32.5%;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .main .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* about-2 */
+
+
+.container .main .about-2 .card p {
+  margin-top: 1.25rem;
+}
+
+.container .main .about-2 .card .bottom img {
+  width: 6.25rem;
+}
+
+/* about-3 */
+
+
+.container .main .about-3 {
+  padding: 4.5rem 0rem;
+}
+
+.container .main .about-3 .cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .main .about-3 .cards-container .card-grey {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24%;
+}
+
+.container .main .about-3 .cards-container .card-grey .top {
+}
+
+.container .main .about-3 .cards-container .card .bottom {
+  /* display: flex;
+  justify-content: flex-end; */
+  bottom: 0rem;
+}
+
+.container .main .about-3 .cards-container .card .bottom img {
+    width: 3.25rem;
+}
+
+.container .main .about-3 .cards-container .card .bottom .button-container {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+.container .main .about-3 .cards-container .card button {
+  background-color: #405165;
+
+}
+
+/* reviews container */
+
+.container .main .reviews {
+  margin-bottom: 6.25rem;
+
+}
+
+
+.container .main .reviews .card {
+  width: 31%;
+  position: relative;
+}
+
+.container .main .reviews .top {
+    text-align: center;
+}
+
+.container .main .reviews .top h3 {
+  margin: 0.6rem;
+}
+
+.container .main .reviews .top .profile-photo {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+
+}
+
+
+.container .main .reviews .fav-active img {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 0.2rem;
+}
+
+
+.container .main .reviews .top .rating img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.container .main .reviews .bottom {
+  display: block;
+  align-items: none;
+}
+
+.container .main .reviews .bottom .circles {
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  cursor: pointer;
+}
+
+.container .main .reviews .bottom .circles .circle {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer .about-company {
+  width: 25%;
+}
+
+.footer .about-company img {
+  width: 35%;
+}
+
+.footer .about-company .text p {
+  margin: 1rem 0rem;
+}
+
+/* footer right-side */
+
+.footer .right-side {
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .right-side .box {
+  width: 30%;
+}
+.footer .right-side .box ul {
+  display: block;
+}
+
+.footer .right-side .box ul li {
+  margin: 1.6rem 0rem;
+}
+
+/* display none */
+
+.d-none {
+  display: none;
+}
